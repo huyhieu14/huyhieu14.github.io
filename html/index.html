@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="script" type="" href="/script/script.js">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-xVVam1KS4+Qt2OrFa+VdRUoXygyKIuNWUUUBZYv+n27STsJ7oDOHJgfF0bNKLMJF" crossorigin="anonymous">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid header-top p-0">
+        <div class="container h-100">
+            <div class="row h-100 ">
+                <div class="col-3 htop-left text-start align-self-center p-0">
+                    <a href=""><i class="fas fa-sync-alt"></i></a>
+                    <a href=""><i class="far fa-heart"></i></a>
+                    <a href=""><i class="fas fa-cart-plus"></i></a>
+                </div>
+                <div class="col-9 htop-right text-end align-self-center p-0">
+                    <a href=""><i class="fas fa-wrench me-2"></i><span class="d-none d-md-inline-block">Guarantee</span></a>
+                    <a href=""><i class="fas fa-map-marker-alt me-2"></i><span class="d-none d-md-inline-block">Store location</span></a>
+                    <a href=""><i class="fas fa-money-bill me-2"></i><span class="d-none d-md-inline-block">Dollar (US)</span></a>
+                    <a href="login.html"><i class="fas fa-user me-2"></i><span class="d-none d-md-inline-block">My account</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid p-0 wrapper-nav">
+        <div class="slide-background">
+            <!-- <img src="/asset/background/slide-show-2.jpg" alt="" class="img-fluid"> -->
+            <div class="container slide-dama">
+                <div class="row pt-4">
+                    <!-- offcanvas -->
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title text-white fs-5" id="offcanvasExampleLabel">DAMA Store</h5>
+                            <button type="button" class="btn-close-white text-reset " data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+
+                        <div class="dropdown mt-3">
+                            <button class="accordion text-white fs-4">STORE</button>
+                            <div class="panel list-unstyled">
+                                <ul class="">
+                                    <li class="title"><a href="">HOME</a></li>
+                                    <li class="mt-1 title"><a href="">ABOUT US</a></li>
+                                    <li class="mt-1 title"><a href="">CONTACT US</a></li>
+                                </ul>
+                            </div>
+
+                            <button class="accordion text-white fs-4">Section 2</button>
+                            <div class="panel list-unstyled">
+                                <ul class="">
+                                    <li class="title"><a href="">HOME</a></li>
+                                    <li class="mt-1 title"><a href="">ABOUT US</a></li>
+                                    <li class="mt-1 title"><a href="">CONTACT US</a></li>
+                                </ul>
+                            </div>
+
+                            <button class="accordion text-white fs-4">Section 3</button>
+                            <div class="panel list-unstyled">
+                                <ul class="">
+                                    <li class="title"><a href="">HOME</a></li>
+                                    <li class="mt-1 title"><a href="">ABOUT US</a></li>
+                                    <li class="mt-1 title"><a href="">CONTACT US</a></li>
+                                </ul>
+                            </div>
+
+                            <script>
+                                var acc = document.getElementsByClassName("accordion");
+                                var i;
+
+                                for (i = 0; i < acc.length; i++) {
+                                    acc[i].addEventListener("click", function() {
+                                        this.classList.toggle("active");
+                                        var panel = this.nextElementSibling;
+                                        if (panel.style.display === "block") {
+                                            panel.style.display = "none";
+                                        } else {
+                                            panel.style.display = "block";
+                                        }
+                                    });
+                                }
+                            </script>
+                        </div>
+                    </div>
+                    <!-- end offcanvas -->
+                    <div class="col-sm-3 col-12">
+                        <div class="row align-items-center">
+                            <div class="col-2 d-sm-none">
+                                <!-- offcanvasbutton -->
+                                <div class="container" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" onclick="myFunction(this)">
+                                    <div class="bar1"></div>
+                                    <div class="bar2"></div>
+                                    <div class="bar3"></div>
+                                </div>
+                                <script>
+                                    function myFunction(x) {
+                                        x.classList.toggle("change");
+                                    }
+                                </script>
+                                <!-- end offcanvasbutton -->
+                            </div>
+                            <div class="col-5 col-sm-11 ">
+                                <img src="/asset/Dana-menu-logo.png" alt="">
+                            </div>
+                            <div class="col-5 col-sm-11 text-sm-start text-end pt-sm-4 pt-3 nowrap">
+                                <a href=""><i class="fab fa-facebook-f"></i></a>
+                                <a href=""><i class="fab fa-twitter ml-3"></i></a>
+                                <a href=""><i class="fab fa-instagram ml-3"></i></a>
+                                <a href=""><i class="fab fa-google ml-3"></i></a>
+                            </div>
+                        </div>
+                        <!-- search bar -->
+                        <div class="container d-sm-none h-100 pt-2">
+                            <div class="d-flex justify-content-center h-100">
+                                <div class="searchbar">
+                                    <input class="search_input" type="text" name="" placeholder="Search...">
+                                    <a href="#" class="search_icon pt-1"><i class="fas fa-search"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end search bar -->
+                    </div>
+                    <div class="col-9 d-none d-sm-block">
+                        <ul class="lv-fl">
+                            <li class="lv1 mr-3">
+                                <ul>
+                                    <li class="mb-3 title"><a href="" class="font-weight-bold">HOME</a></li>
+                                    <li>Home</li>
+                                    <li class="pt-1">About Us</li>
+                                    <li class="pt-1">Contact Us</li>
+                                </ul>
+                            </li>
+                            <li class="lv1 mr-3">
+                                <ul>
+                                    <li class="mb-3 title"><a href="" class="font-weight-bold">PRODUCT</a></li>
+                                    <li>New</li>
+                                    <li class="pt-1">Featured</li>
+                                    <li class="pt-1">Sale Off</li>
+                                </ul>
+                            </li>
+                            <li class="lv1">
+                                <ul>
+                                    <li class="mb-3 title"><a href="" class="font-weight-bold">BLOG</a></li>
+                                    <li>New Blog</li>
+                                    <li class="pt-1">Lester</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container ">
+                <div class="row pt-5">
+                    <div class="col-2 d-none d-lg-block header-nav">
+                        <ul class="nav flex-column nav-vertical text-center">
+                            <li class="nav-item hover-i"><a href="javascript:void(0);"><i class="fal fa-stream"></i></a></li>
+                            <li class="nav-item hover-i"><a href="javascript:void(0);"><i class="fal fa-headphones"></i></a>
+                                <div class="nav-active">
+                                    <ul class="d-flex">
+                                        <li><span>HEADPHONE</span>
+                                            <ul>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                            </ul>
+                                        </li>
+                                        <li><span>HEADPHONE</span>
+                                            <ul>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <img src="/asset/product_img/images-menu.jpg" alt="">
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item hover-i"><a href="javascript:void(0);"><i class="fal fa-watch-fitness"></i></a>
+                                <div class="nav-active ">
+                                    <ul class="d-flex">
+                                        <li><span>HEADPHONE</span>
+                                            <ul>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                            </ul>
+                                        </li>
+                                        <li><span>HEADPHONE</span>
+                                            <ul>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <img src="/asset/product_img/images-menu.jpg" alt="">
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item hover-i"><a href="javascript:void(0);"><i class="fal fa-mobile-android"></i></a>
+                                <div class="nav-active ">
+                                    <ul class="d-flex">
+                                        <li><span>HEADPHONE</span>
+                                            <ul>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                            </ul>
+                                        </li>
+                                        <li><span>HEADPHONE</span>
+                                            <ul>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <img src="/asset/product_img/images-menu.jpg" alt="">
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item hover-i"><a href="javascript:void(0);"><i class="fas fa-gamepad"></i></a>
+                                <div class="nav-active ">
+                                    <ul class="d-flex">
+                                        <li><span>HEADPHONE</span>
+                                            <ul>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                            </ul>
+                                        </li>
+                                        <li><span>HEADPHONE</span>
+                                            <ul>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <img src="/asset/product_img/images-menu.jpg" alt="">
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item hover-i"><a href="javascript:void(0);"><i class="fal fa-laptop"></i></a>
+                                <div class="nav-active ">
+                                    <ul class="d-flex">
+                                        <li><span>HEADPHONE</span>
+                                            <ul>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                            </ul>
+                                        </li>
+                                        <li><span>HEADPHONE</span>
+                                            <ul>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <img src="/asset/product_img/images-menu.jpg" alt="">
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item hover-i"><a href="javascript:void(0);"><i class="fal fa-tv"></i></a>
+                                <div class="nav-active ">
+                                    <ul class="d-flex">
+                                        <li><span>HEADPHONE</span>
+                                            <ul>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                            </ul>
+                                        </li>
+                                        <li><span>HEADPHONE</span>
+                                            <ul>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                                <li></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <img src="/asset/product_img/images-menu.jpg" alt="">
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-10 text-center">
+                        <div class="text-header">
+                            <p class="text-center">HEADPHONE</p>
+                        </div>
+                        <div class="img-header">
+                            <img src="/asset/slideshow/home2-slideshow.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid ">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-12 ">
+                    <img src="/asset/product_img/home2-banner.png" alt="" class="img-fluid display: block">
+                    <div>
+                        <p class="text-center pt-5"><b>IPHONE 6S SILVER-64GB</b></p>
+                    </div>
+                    <div>
+                        <p class="text-center pt-1"> Màn hình: LED-backlit IPS LCD, 4.7", Retina HD · Camera trước: 5 MP · Camera sau: 12 MP · Chipset: Apple A9 2 nhân 64-bit
+                        </p>
+                    </div>
+                    <div>
+                        <p class="text-center pt-4">BEST PRICE:<span class="text-warning"> $250.00</span></p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-12">
+                    <div class="row">
+                        <div class="col-sm-6 col-12 p-0 m-0">
+                            <div class="product border">
+                                <div class="product-z">
+                                    <div class="prd-h ">
+                                        <div class="product-tag ">
+                                            Watch
+                                        </div>
+                                        <div class="product-name">
+                                            <h5>Sony Smartwatch SW2</h5>
+                                        </div>
+                                        <div class="product-price">
+                                            <p>PRICE: <span class="text-warning"><b>$ 250.0</b></span></p>
+                                        </div>
+                                    </div>
+                                    <div class="prd-img ">
+                                        <img src="/asset/product_img/product/1.jpg" alt="">
+                                    </div>
+                                    <div class="prd-icon d-flex justify-content-around">
+                                        <div class="circle">
+                                            <i class="fal fa-sync"></i>
+                                        </div>
+                                        <div class="circle">
+                                            <i class="fal fa-heart"></i>
+                                        </div>
+                                        <div class="circle">
+                                            <i class="fal fa-cart-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product border">
+                                <div class="product-z">
+                                    <div class="prd-h ">
+                                        <div class="product-tag ">
+                                            Watch
+                                        </div>
+                                        <div class="product-name">
+                                            <h5>Sony Smartwatch SW2</h5>
+                                        </div>
+                                        <div class="product-price">
+                                            <p>PRICE: <span class="text-warning"><b>$ 250.0</b></span></p>
+                                        </div>
+                                    </div>
+                                    <div class="prd-img ">
+                                        <img src="/asset/product_img/product/1.jpg" alt="">
+                                    </div>
+                                    <div class="prd-icon d-flex justify-content-around">
+                                        <div class="circle">
+                                            <i class="fal fa-sync"></i>
+                                        </div>
+                                        <div class="circle">
+                                            <i class="fal fa-heart"></i>
+                                        </div>
+                                        <div class="circle">
+                                            <i class="fal fa-cart-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-12 p-0 m-0">
+                            <div class="product border">
+                                <div class="product-z">
+                                    <div class="prd-h ">
+                                        <div class="product-tag ">
+                                            Watch
+                                        </div>
+                                        <div class="product-name">
+                                            <h5>Sony Smartwatch SW2</h5>
+                                        </div>
+                                        <div class="product-price">
+                                            <p>PRICE: <span class="text-warning"><b>$ 250.0</b></span></p>
+                                        </div>
+                                    </div>
+                                    <div class="prd-img ">
+                                        <img src="/asset/product_img/product/1.jpg" alt="">
+                                    </div>
+                                    <div class="prd-icon d-flex justify-content-around">
+                                        <div class="circle">
+                                            <i class="fal fa-sync"></i>
+                                        </div>
+                                        <div class="circle">
+                                            <i class="fal fa-heart"></i>
+                                        </div>
+                                        <div class="circle">
+                                            <i class="fal fa-cart-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product border">
+                                <div class="product-z">
+                                    <div class="prd-h ">
+                                        <div class="product-tag ">
+                                            Watch
+                                        </div>
+                                        <div class="product-name">
+                                            <h5>Sony Smartwatch SW2</h5>
+                                        </div>
+                                        <div class="product-price">
+                                            <p>PRICE: <span class="text-warning"><b>$ 250.0</b></span></p>
+                                        </div>
+                                    </div>
+                                    <div class="prd-img ">
+                                        <img src="/asset/product_img/product/1.jpg" alt="">
+                                    </div>
+                                    <div class="prd-icon d-flex justify-content-around">
+                                        <div class="circle">
+                                            <i class="fal fa-sync"></i>
+                                        </div>
+                                        <div class="circle">
+                                            <i class="fal fa-heart"></i>
+                                        </div>
+                                        <div class="circle">
+                                            <i class="fal fa-cart-plus"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid popular-prd">
+        <!-- Tab links -->
+        <div class="tab">
+            <button class="tablinks btn shadow-none active" onclick="openCity(event, 'headphone')"><i class="fal fa-headphones"></i></button>
+            <button class="tablinks btn shadow-none" onclick="openCity(event, 'watch')"><i class="fal fa-watch-fitness"></i></button>
+            <button class="tablinks btn shadow-none" onclick="openCity(event, 'phone')"><i class="fal fa-mobile-android"></i></button>
+            <button class="tablinks btn shadow-none" onclick="openCity(event, 'gamepad')"><i class="fas fa-gamepad"></i></button>
+            <button class="tablinks btn shadow-none" onclick="openCity(event, 'laptop')"><i class="fal fa-laptop"></i></button>
+            <button class="tablinks btn shadow-none" onclick="openCity(event, 'tv')"><i class="fal fa-tv"></i></button>
+        </div>
+
+        <!-- Tab content -->
+        <div id="headphone" class="tabcontent" style="display: block;">
+            <h3>London</h3>
+            <p>London is the capital city of England.</p>
+        </div>
+
+        <div id="watch" class="tabcontent" style="display: none;">
+            <h3>Paris</h3>
+            <p>Paris is the capital of France.</p>
+        </div>
+
+        <div id="phone" class="tabcontent" style="display: none;">
+            <h3>Tokyo</h3>
+            <p>Tokyo is the capital of Japan.</p>
+        </div>
+        <div id="gamepad" class="tabcontent" style="display: none;">
+            <h3>Tokyo</h3>
+            <p>Tokyo is the capital of Japan.</p>
+        </div>
+        <div id="laptop" class="tabcontent" style="display: none;">
+            <h3>Tokyo</h3>
+            <p>Tokyo is the capital of Japan.</p>
+        </div>
+        <div id="tv" class="tabcontent" style="display: none;">
+            <h3>Tokyo</h3>
+            <p>Tokyo is the capital of Japan.</p>
+        </div>
+    </div>
+    <!-- Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <!-- Separate -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    <script src="/script/script.js"></script>
+</body>
+
+
+</html>
