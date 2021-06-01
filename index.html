@@ -38,7 +38,7 @@
                     <a href=""><i class="fas fa-wrench me-2"></i><span class="d-none d-md-inline-block">Guarantee</span></a>
                     <a href=""><i class="fas fa-map-marker-alt me-2"></i><span class="d-none d-md-inline-block">Store location</span></a>
                     <a href=""><i class="fas fa-money-bill me-2"></i><span class="d-none d-md-inline-block">Dollar (US)</span></a>
-                    <a href="login.html"><i class="fas fa-user me-2"></i><span class="d-none d-md-inline-block">My account</span></a>
+                    <a href="/html/login.html"><i class="fas fa-user me-2"></i><span class="d-none d-md-inline-block">My account</span></a>
                 </div>
             </div>
         </div>
@@ -361,10 +361,10 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid ">
+    <div class="container-fluid pb-5">
         <div class="container">
             <div class="row">
-                <div class="col-sm-6 col-12 ">
+                <div class="col-md-6 col-12 ">
                     <img src="/asset/product_img/home2-banner.png" alt="" class="img-fluid display: block">
                     <div>
                         <p class="text-center pt-5"><b>IPHONE 6S SILVER-64GB</b></p>
@@ -377,9 +377,9 @@
                         <p class="text-center pt-4">BEST PRICE:<span class="text-warning"> $250.00</span></p>
                     </div>
                 </div>
-                <div class="col-sm-6 col-12">
+                <div class="col-md-6 col-12">
                     <div class="row">
-                        <div class="col-sm-6 col-12 p-0 m-0">
+                        <div class="col-md-6 col-12 p-0 m-0">
                             <div class="product border">
                                 <div class="product-z">
                                     <div class="prd-h ">
@@ -439,7 +439,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-12 p-0 m-0">
+                        <div class="col-md-6 col-12 p-0 m-0">
                             <div class="product border">
                                 <div class="product-z">
                                     <div class="prd-h ">
@@ -506,43 +506,51 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid popular-prd">
-        <!-- Tab links -->
-        <div class="tab">
-            <button class="tablinks btn shadow-none active" onclick="openCity(event, 'headphone')"><i class="fal fa-headphones"></i></button>
-            <button class="tablinks btn shadow-none" onclick="openCity(event, 'watch')"><i class="fal fa-watch-fitness"></i></button>
-            <button class="tablinks btn shadow-none" onclick="openCity(event, 'phone')"><i class="fal fa-mobile-android"></i></button>
-            <button class="tablinks btn shadow-none" onclick="openCity(event, 'gamepad')"><i class="fas fa-gamepad"></i></button>
-            <button class="tablinks btn shadow-none" onclick="openCity(event, 'laptop')"><i class="fal fa-laptop"></i></button>
-            <button class="tablinks btn shadow-none" onclick="openCity(event, 'tv')"><i class="fal fa-tv"></i></button>
-        </div>
+    <div class="container-fluid popular-prd pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-12">
+                    <h1><span class="text-warning">&mdash; P</span>OPULAR PRODUCT</h1>
+                </div>
+                <div class="col-md-6 col-12  align-self-end">
+                    <!-- Tab links -->
+                    <div class="tab justify-content-sm-start">
+                        <button class="tablinks btn shadow-none active" onclick="openCity(event, 'headphone')"><i class="fal fa-headphones"></i></button>
+                        <button class="tablinks btn shadow-none" onclick="openCity(event, 'watch')"><i class="fal fa-watch-fitness"></i></button>
+                        <button class="tablinks btn shadow-none" onclick="openCity(event, 'phone')"><i class="fal fa-mobile-android"></i></button>
+                        <button class="tablinks btn shadow-none" onclick="openCity(event, 'gamepad')"><i class="fas fa-gamepad"></i></button>
+                        <button class="tablinks btn shadow-none" onclick="openCity(event, 'laptop')"><i class="fal fa-laptop"></i></button>
+                        <button class="tablinks btn shadow-none" onclick="openCity(event, 'tv')"><i class="fal fa-tv"></i></button>
+                    </div>
+                </div>
+                <!-- Tab content -->
+                <div id="headphone" class="tabcontent" style="display: block;">
+                    <h3>London</h3>
+                    <p>London is the capital city of England.</p>
+                </div>
 
-        <!-- Tab content -->
-        <div id="headphone" class="tabcontent" style="display: block;">
-            <h3>London</h3>
-            <p>London is the capital city of England.</p>
-        </div>
+                <div id="watch" class="tabcontent" style="display: none;">
+                    <h3>Paris</h3>
+                    <p>Paris is the capital of France.</p>
+                </div>
 
-        <div id="watch" class="tabcontent" style="display: none;">
-            <h3>Paris</h3>
-            <p>Paris is the capital of France.</p>
-        </div>
-
-        <div id="phone" class="tabcontent" style="display: none;">
-            <h3>Tokyo</h3>
-            <p>Tokyo is the capital of Japan.</p>
-        </div>
-        <div id="gamepad" class="tabcontent" style="display: none;">
-            <h3>Tokyo</h3>
-            <p>Tokyo is the capital of Japan.</p>
-        </div>
-        <div id="laptop" class="tabcontent" style="display: none;">
-            <h3>Tokyo</h3>
-            <p>Tokyo is the capital of Japan.</p>
-        </div>
-        <div id="tv" class="tabcontent" style="display: none;">
-            <h3>Tokyo</h3>
-            <p>Tokyo is the capital of Japan.</p>
+                <div id="phone" class="tabcontent" style="display: none;">
+                    <h3>Tokyo</h3>
+                    <p>Tokyo is the capital of Japan.</p>
+                </div>
+                <div id="gamepad" class="tabcontent" style="display: none;">
+                    <h3>Tokyo</h3>
+                    <p>Tokyo is the capital of Japan.</p>
+                </div>
+                <div id="laptop" class="tabcontent" style="display: none;">
+                    <h3>Tokyo</h3>
+                    <p>Tokyo is the capital of Japan.</p>
+                </div>
+                <div id="tv" class="tabcontent" style="display: none;">
+                    <h3>Tokyo</h3>
+                    <p>Tokyo is the capital of Japan.</p>
+                </div>
+            </div>
         </div>
     </div>
     <!-- Bundle -->

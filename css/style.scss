@@ -300,6 +300,7 @@
 }
 
 .product {
+    transition: all .5s;
     background-color: white;
     padding-left: 2.5%;
     overflow: hidden;
@@ -329,6 +330,22 @@
             border-radius: 50%;
             height: 3em;
             width: 3em;
+            cursor: pointer;
+            i {
+                width: 100%;
+                height: 100%;
+                color: white;
+                font-size: 120%;
+                text-align: center;
+                margin-top: 30%;
+            }
+        }
+        .circle:hover {
+            background: #F5C615;
+            border-radius: 50%;
+            height: 3em;
+            width: 3em;
+            cursor: pointer;
             i {
                 width: 100%;
                 height: 100%;
@@ -342,15 +359,9 @@
 }
 
 .product:hover {
-    border: 1px solid rgb(61, 61, 61);
-    transform: translate(-5px, -5px);
-    transition: .5s cubic-bezier(.5, .03, .41, 1);
-    -o-transition: .5s;
-    -ms-transition: .5s;
-    -moz-transition: .5s;
-    -webkit-transition: .5s;
-    transition: .5s;
-    box-shadow: 10px 10px 5px #888888;
+    z-index: 99;
+    transition: all .5s;
+    box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 0.41);
     .prd-icon {
         transform: translateY(10%);
         transition: all 0.4s;
@@ -362,8 +373,15 @@
 /* Style the tab */
 
 .popular-prd {
+    background-color: #F6F6F6;
+    p {
+        // font-size: 50px;
+    }
     .tab {
         .btn {
+            i {
+                font-size: 30px;
+            }
             cursor: pointer;
             padding: 14px 16px;
             transition: 0.3s;
@@ -372,11 +390,13 @@
             }
             &:hover {
                 i {
+                    font-size: 30px;
                     color: #F5C615;
                 }
             }
             &.active {
                 i {
+                    font-size: 30px;
                     color: #F5C615;
                 }
             }
@@ -396,9 +416,34 @@
     padding-left: 5%;
 }
 
-@media (max-width: 414px) {
+@media (max-width: 500px) {
     .product {
         height: 500px
+    }
+    .tab {
+        .btn {
+            i {
+                font-size: 10px;
+            }
+            cursor: pointer;
+            padding: 10px 12px;
+            transition: 0.3s;
+            &:focus {
+                outline: none;
+            }
+            &:hover {
+                i {
+                    font-size: 10px;
+                    color: #F5C615;
+                }
+            }
+            &.active {
+                i {
+                    font-size: 10px;
+                    color: #F5C615;
+                }
+            }
+        }
     }
 }
 
@@ -436,6 +481,9 @@
                 width: 70%;
             }
         }
+    }
+    .product {
+        height: 650px;
     }
 }
 
