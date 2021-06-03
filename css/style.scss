@@ -305,6 +305,7 @@
     padding-left: 2.5%;
     overflow: hidden;
     height: 450px;
+    padding: 26px;
     a {
         text-decoration: none;
         color: black;
@@ -323,7 +324,7 @@
     }
     .prd-icon {
         transform: translateY(300%);
-        width: 90%;
+        width: 100%;
         opacity: 0;
         .circle {
             background: #2D5593;
@@ -359,6 +360,7 @@
 }
 
 .product:hover {
+    position: relative;
     z-index: 99;
     transition: all .5s;
     box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 0.41);
@@ -378,6 +380,7 @@
         // font-size: 50px;
     }
     .tab {
+        white-space: nowrap;
         .btn {
             i {
                 font-size: 30px;
@@ -412,13 +415,17 @@
 .product-z {
     width: 100%;
     height: 100%;
-    padding-top: 5%;
-    padding-left: 5%;
+}
+
+.product-lg {
+    width: 585px;
+    height: 420px;
+    background-color: white;
 }
 
 @media (max-width: 500px) {
     .product {
-        height: 500px
+        height: 400px
     }
     .tab {
         .btn {
@@ -470,6 +477,9 @@
 }
 
 @media (max-width: 800.98px) {
+    .product {
+        height: 400px
+    }
     .slide-background {
         .text-header {
             p {
