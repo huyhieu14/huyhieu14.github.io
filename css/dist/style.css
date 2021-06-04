@@ -235,9 +235,6 @@
   width: 500px;
   opacity: 1;
 }
-.hover-i:hover .nav-active li {
-  background-color: #000000;
-}
 
 .text-header {
   position: absolute;
