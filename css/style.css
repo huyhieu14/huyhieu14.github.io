@@ -440,13 +440,71 @@
 }
 
 /* Style the tab */
+.product-lg {
+  width: 585px;
+  height: 420px;
+}
+
+.product-lg .prd-icon {
+  -webkit-transform: translateY(300%);
+          transform: translateY(300%);
+  width: 100%;
+  opacity: 0;
+}
+
+.product-lg .prd-icon .circle {
+  background: #2D5593;
+  border-radius: 50%;
+  height: 3em;
+  width: 3em;
+  cursor: pointer;
+}
+
+.product-lg .prd-icon .circle i {
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 120%;
+  text-align: center;
+  margin-top: 30%;
+}
+
+.product-lg .prd-icon .circle:hover {
+  background: #F5C615;
+  border-radius: 50%;
+  height: 3em;
+  width: 3em;
+  cursor: pointer;
+}
+
+.product-lg .prd-icon .circle:hover i {
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 120%;
+  text-align: center;
+  margin-top: 30%;
+}
+
+.product-lg .btn:active {
+  border: 1px solid #333;
+}
+
+.product-lg .btn:hover {
+  border: 1px solid #333;
+}
+
+.product-lg:hover .prd-icon {
+  -webkit-transform: translateY(10%);
+          transform: translateY(10%);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  opacity: 1;
+}
+
 .popular-prd {
   background-color: #F6F6F6;
   /* Style the tab content */
-}
-
-.popular-prd .tab {
-  white-space: nowrap;
 }
 
 .popular-prd .tab .btn {
@@ -484,13 +542,34 @@
   height: 100%;
 }
 
-.product-lg {
-  width: 585px;
-  height: 420px;
-  background-color: white;
+.carousel-indicators {
+  width: 270px;
+  height: 64px;
+}
+
+.carousel-indicators .btn {
+  width: 60px;
+  height: 60px;
 }
 
 @media (max-width: 500px) {
+  .popular-prd .tab {
+    white-space: nowrap;
+  }
+  .popular-prd .tab .btn i {
+    font-size: 20px;
+  }
+  .popular-prd .tab .btn:focus {
+    outline: none;
+  }
+  .popular-prd .tab .btn:hover i {
+    font-size: 20px;
+    color: #F5C615;
+  }
+  .popular-prd .tab .btn.active i {
+    font-size: 20px;
+    color: #F5C615;
+  }
   .product {
     height: 400px;
   }
@@ -499,9 +578,6 @@
     padding: 10px 12px;
     -webkit-transition: 0.3s;
     transition: 0.3s;
-  }
-  .tab .btn i {
-    font-size: 10px;
   }
   .tab .btn:focus {
     outline: none;
