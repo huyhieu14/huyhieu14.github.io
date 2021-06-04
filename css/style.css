@@ -259,10 +259,6 @@
   height: 60px;
 }
 
-.nav-vertical li:hover {
-  background-color: #000000;
-}
-
 .nav-vertical a {
   text-decoration: none;
   color: white;
@@ -296,6 +292,10 @@
 .hover-i:hover .nav-active {
   width: 500px;
   opacity: 1;
+}
+
+.hover-i:hover .nav-active li {
+  background-color: #000000;
 }
 
 .text-header {
@@ -440,9 +440,50 @@
 }
 
 /* Style the tab */
+.popular-prd {
+  background-color: #F6F6F6;
+  /* Style the tab content */
+}
+
+.popular-prd .tab .btn {
+  cursor: pointer;
+  padding: 14px 16px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.popular-prd .tab .btn i {
+  font-size: 30px;
+}
+
+.popular-prd .tab .btn:focus {
+  outline: none;
+}
+
+.popular-prd .tab .btn:hover i {
+  font-size: 30px;
+  color: #F5C615;
+}
+
+.popular-prd .tab .btn.active i {
+  font-size: 30px;
+  color: #F5C615;
+}
+
+.popular-prd .tabcontent {
+  display: none;
+  padding: 6px 12px;
+}
+
+.product-z {
+  width: 100%;
+  height: 100%;
+}
+
 .product-lg {
-  width: 585px;
-  height: 420px;
+  background-color: white;
+  width: 100%;
+  height: 100%;
 }
 
 .product-lg .prd-icon {
@@ -453,6 +494,7 @@
 }
 
 .product-lg .prd-icon .circle {
+  margin-right: 20px;
   background: #2D5593;
   border-radius: 50%;
   height: 3em;
@@ -494,56 +536,30 @@
   border: 1px solid #333;
 }
 
+.product-lg:hover {
+  position: relative;
+  z-index: 99;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  -webkit-box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 0.41);
+          box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 0.41);
+}
+
 .product-lg:hover .prd-icon {
-  -webkit-transform: translateY(10%);
-          transform: translateY(10%);
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
   opacity: 1;
 }
 
-.popular-prd {
-  background-color: #F6F6F6;
-  /* Style the tab content */
-}
-
-.popular-prd .tab .btn {
-  cursor: pointer;
-  padding: 14px 16px;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.popular-prd .tab .btn i {
-  font-size: 30px;
-}
-
-.popular-prd .tab .btn:focus {
-  outline: none;
-}
-
-.popular-prd .tab .btn:hover i {
-  font-size: 30px;
-  color: #F5C615;
-}
-
-.popular-prd .tab .btn.active i {
-  font-size: 30px;
-  color: #F5C615;
-}
-
-.popular-prd .tabcontent {
-  display: none;
-  padding: 6px 12px;
-}
-
-.product-z {
+.carousel-inner {
   width: 100%;
-  height: 100%;
+  height: 315px;
 }
 
 .carousel-indicators {
-  width: 270px;
+  width: 100%;
   height: 64px;
 }
 
@@ -552,26 +568,56 @@
   height: 60px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 375px) {
+  .product {
+    height: 450px;
+  }
+  .popular-prd h1 {
+    font-size: 27px;
+  }
   .popular-prd .tab {
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     white-space: nowrap;
   }
   .popular-prd .tab .btn i {
-    font-size: 20px;
+    font-size: 15px;
   }
   .popular-prd .tab .btn:focus {
     outline: none;
   }
   .popular-prd .tab .btn:hover i {
-    font-size: 20px;
+    font-size: 15px;
     color: #F5C615;
   }
   .popular-prd .tab .btn.active i {
-    font-size: 20px;
+    font-size: 15px;
     color: #F5C615;
   }
-  .product {
-    height: 400px;
+}
+
+@media (max-width: 500px) {
+  .popular-prd .tab {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    white-space: nowrap;
+  }
+  .popular-prd .tab .btn i {
+    font-size: 18px;
+  }
+  .popular-prd .tab .btn:focus {
+    outline: none;
+  }
+  .popular-prd .tab .btn:hover i {
+    font-size: 18px;
+    color: #F5C615;
+  }
+  .popular-prd .tab .btn.active i {
+    font-size: 18px;
+    color: #F5C615;
   }
   .tab .btn {
     cursor: pointer;
@@ -612,16 +658,13 @@
 
 @media (max-width: 800.98px) {
   .product {
-    height: 400px;
+    height: 550px;
   }
   .slide-background .text-header p {
     font-size: 90px;
   }
   .slide-background .img-header img {
     width: 70%;
-  }
-  .product {
-    height: 650px;
   }
 }
 
@@ -631,6 +674,13 @@
   }
   .text-header p {
     font-size: 90px;
+  }
+  .product:hover .prd-icon {
+    -webkit-transform: translateY(20%);
+            transform: translateY(20%);
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    opacity: 1;
   }
 }
 /*# sourceMappingURL=style.css.map */

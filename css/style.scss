@@ -216,9 +216,6 @@
         width: 60px;
         height: 60px;
     }
-    li:hover {
-        background-color: #000000;
-    }
     a {
         text-decoration: none;
         color: white;
@@ -250,6 +247,9 @@
 .hover-i:hover .nav-active {
     width: 500px;
     opacity: 1;
+    li {
+        background-color: #000000;
+    }
 }
 
 .text-header {
@@ -373,59 +373,6 @@
 
 
 /* Style the tab */
-.product-lg{
-    width: 585px;
-    height: 420px;
-    .prd-icon {
-        transform: translateY(300%);
-        width: 100%;
-        opacity: 0;
-        .circle {
-            background: #2D5593;
-            border-radius: 50%;
-            height: 3em;
-            width: 3em;
-            cursor: pointer;
-            i {
-                width: 100%;
-                height: 100%;
-                color: white;
-                font-size: 120%;
-                text-align: center;
-                margin-top: 30%;
-            }
-        }
-        .circle:hover {
-            background: #F5C615;
-            border-radius: 50%;
-            height: 3em;
-            width: 3em;
-            cursor: pointer;
-            i {
-                width: 100%;
-                height: 100%;
-                color: white;
-                font-size: 120%;
-                text-align: center;
-                margin-top: 30%;
-            }
-        }
-    }
-    .btn:active{
-        border: 1px solid #333;
-    }
-    .btn:hover{
-        border: 1px solid #333;
-    }
-}
-
-.product-lg:hover{
-    .prd-icon {
-        transform: translateY(10%);
-        transition: all 0.4s;
-        opacity: 1;
-    }
-}
 
 .popular-prd {
     background-color: #F6F6F6;
@@ -469,48 +416,144 @@
     height: 100%;
 }
 
-
-
 // -------------------------
+.product-lg {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    .prd-icon {
+        transform: translateY(300%);
+        width: 100%;
+        opacity: 0;
+        .circle {
+            margin-right: 20px;
+            background: #2D5593;
+            border-radius: 50%;
+            height: 3em;
+            width: 3em;
+            cursor: pointer;
+            i {
+                width: 100%;
+                height: 100%;
+                color: white;
+                font-size: 120%;
+                text-align: center;
+                margin-top: 30%;
+            }
+        }
+        .circle:hover {
+            background: #F5C615;
+            border-radius: 50%;
+            height: 3em;
+            width: 3em;
+            cursor: pointer;
+            i {
+                width: 100%;
+                height: 100%;
+                color: white;
+                font-size: 120%;
+                text-align: center;
+                margin-top: 30%;
+            }
+        }
+    }
+    .btn:active {
+        border: 1px solid #333;
+    }
+    .btn:hover {
+        border: 1px solid #333;
+    }
+}
 
-.carousel-indicators{
-    width: 270px;
+.product-lg:hover {
+    position: relative;
+    z-index: 99;
+    transition: all .5s;
+    box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 0.41);
+    .prd-icon {
+        transform: translateY(0%);
+        transition: all 0.4s;
+        opacity: 1;
+    }
+}
+
+.carousel-inner {
+    width: 100%;
+    height: 315px;
+}
+
+.carousel-indicators {
+    width: 100%;
     height: 64px;
     .btn {
         width: 60px;
         height: 60px;
     }
 }
-// --------------------------
 
-@media (max-width: 500px) {
-    .popular-prd{
-        .tab{
+// --------------------------
+@media (max-width: 375px) {
+    .product {
+        height: 450px;
+    }
+    .popular-prd {
+        h1 {
+            font-size: 27px;
+        }
+        .tab {
+            text-align: center;
+            align-items: center;
             white-space: nowrap;
-            .btn{
-                i{
-                    font-size: 20px;
+            .btn {
+                i {
+                    font-size: 15px;
                 }
                 &:focus {
                     outline: none;
                 }
                 &:hover {
                     i {
-                        font-size: 20px;
+                        font-size: 15px;
                         color: #F5C615;
                     }
                 }
                 &.active {
                     i {
-                        font-size: 20px;
+                        font-size: 15px;
                         color: #F5C615;
                     }
                 }
             }
         }
     }
-    .product {
-        height: 400px;  
+}
+
+@media (max-width: 500px) {
+    .popular-prd {
+        .tab {
+            align-items: center;
+            white-space: nowrap;
+            .btn {
+                i {
+                    font-size: 18px;
+                }
+                &:focus {
+                    outline: none;
+                }
+                &:hover {
+                    i {
+                        font-size: 18px;
+                        color: #F5C615;
+                    }
+                }
+                &.active {
+                    i {
+                        font-size: 18px;
+                        color: #F5C615;
+                    }
+                }
+            }
+        }
     }
     .tab {
         .btn {
@@ -560,7 +603,7 @@
 
 @media (max-width: 800.98px) {
     .product {
-        height: 400px
+        height: 550px
     }
     .slide-background {
         .text-header {
@@ -574,9 +617,6 @@
             }
         }
     }
-    .product {
-        height: 650px;
-    }
 }
 
 @media (max-width: 900.98px) {
@@ -588,6 +628,13 @@
     .text-header {
         p {
             font-size: 90px;
+        }
+    }
+    .product:hover {
+        .prd-icon {
+            transform: translateY(20%);
+            transition: all 0.4s;
+            opacity: 1;
         }
     }
 }
