@@ -593,6 +593,24 @@
   color: white;
 }
 
+.slide-background-2 {
+  width: 100%;
+  height: 595px;
+  background-image: url("/asset/background/home3-hot-deta.jpg");
+}
+
+.slide-hot {
+  margin-top: 150px;
+}
+.slide-hot .carousel-indicators-2 {
+  width: 60px;
+  height: 60px;
+}
+
+.best-prd {
+  background-image: url("/asset/background/Dana-home1-bg-featured.jpg");
+}
+
 @media (max-width: 575.98px) {
   .wrapper-nav {
     height: 550px;
