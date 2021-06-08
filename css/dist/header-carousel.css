@@ -1,0 +1,126 @@
+#myCarouselHeader .carousel {
+  width: 100%;
+  height: 100%;
+}
+#myCarouselHeader .carousel-inner {
+  height: 761px;
+}
+#myCarouselHeader .carousel-indicators {
+  padding: 0px;
+  margin: 0px;
+}
+#myCarouselHeader .carousel-indicators li {
+  background-color: black;
+}
+#myCarouselHeader .btn {
+  width: 134px;
+  height: 49px;
+  border: 1px solid white;
+  border-radius: 50px;
+  position: absolute;
+  z-index: 98;
+  top: 40%;
+  left: 48%;
+  transform: translateX(-50%);
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+}
+#myCarouselHeader .btn-icon {
+  right: -20%;
+  top: 0%;
+  position: absolute;
+  display: block;
+  width: 45px;
+  height: 45px;
+  background-color: #F5C615;
+  border-radius: 50px;
+}
+#myCarouselHeader .btn-icon i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+}
+#myCarouselHeader .btn:hover .btn-icon {
+  z-index: 99;
+  transition: all 0.5s;
+  box-shadow: 0px 0px 10px 0px #ffd84c;
+}
+#myCarouselHeader .slide-header-1 img {
+  position: relative;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+#myCarouselHeader .slide-header-1 .text-header {
+  position: absolute;
+  z-index: 98;
+  left: 49%;
+  transform: translateX(-50%);
+  font-size: 123px;
+  font-weight: bold;
+  color: white;
+}
+#myCarouselHeader .slide-header-2 h1 {
+  top: 30%;
+  position: absolute;
+  z-index: 98;
+  left: 18%;
+  transform: translateX(-50%);
+  font-size: 50px;
+  font-weight: bold;
+}
+#myCarouselHeader .slide-header-2 p {
+  width: 449px;
+  top: 45%;
+  position: absolute;
+  z-index: 98;
+  left: 24%;
+  transform: translateX(-50%);
+  font-size: 15px;
+  font-weight: bold;
+}
+#myCarouselHeader .slide-header-2 img {
+  padding-left: 350px;
+}
+#myCarouselHeader .slide-header-2 .btn {
+  top: 60%;
+  left: 9%;
+}
+#myCarouselHeader .slide-header-3 img {
+  padding-left: 60%;
+}
+#myCarouselHeader .slide-header-3 h1 {
+  top: 30%;
+  position: absolute;
+  z-index: 98;
+  left: 24%;
+  transform: translateX(-50%);
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+}
+#myCarouselHeader .slide-header-3 p {
+  top: 60%;
+  left: 11%;
+  width: 150px;
+  height: 49px;
+  border: 1px solid white;
+  border-radius: 50px;
+  position: absolute;
+  z-index: 98;
+  transform: translateX(-50%);
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+}
+#myCarouselHeader .slide-header-3 .btn {
+  top: 60%;
+  left: 30%;
+}
+#myCarouselHeader .slide-header-3 .btn-z {
+  left: 30%;
+  background-color: transparent;
+  color: white;
+}

@@ -1,0 +1,61 @@
+.newsletter {
+  display: inline-block;
+  width: 100%;
+  background: #141414;
+  padding: 30px 0px;
+}
+.newsletter button {
+  border: none;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  background: none;
+}
+.newsletter form {
+  width: 100%;
+  display: inline-block;
+  position: relative;
+}
+.newsletter form input {
+  color: #807e8e;
+  letter-spacing: 1px;
+  background: #363636;
+  border: none;
+  box-shadow: none;
+  height: 46px;
+  line-height: 46px;
+  padding: 0px 40px 0px 20px;
+  width: 100%;
+}
+
+#footer {
+  padding: 100px 0px 0px;
+  background: #212121;
+}
+#footer .top-footer a {
+  text-decoration: none;
+  transition: all 0.5s ease-out 0s;
+  color: white;
+}
+#footer .top-footer a:hover {
+  color: #f5c615;
+}
+#footer .top-footer h4 {
+  margin-bottom: 20px;
+}
+#footer .top-footer li {
+  margin-bottom: 10px;
+}
+#footer .bottom-footer .icon-4 {
+  float: left;
+}
+#footer .bottom-footer .icon-4 .btn {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+}
+#footer .bottom-footer .icon-4 .btn i {
+  color: black;
+}

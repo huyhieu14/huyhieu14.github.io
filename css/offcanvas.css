@@ -1,0 +1,124 @@
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.accordion {
+  background-color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.offcanvas {
+  background-color: black;
+}
+
+.offcanvas .active,
+.offcanvas .accordion:hover {
+  background-color: black;
+}
+
+.accordion:active button {
+  color: #F5C615;
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: black;
+  overflow: hidden;
+}
+
+.panel li {
+  list-style: none;
+}
+
+.panel li a {
+  text-decoration: none;
+}
+
+.panel li a:hover {
+  color: #F5C615;
+}
+
+.panel a {
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+.panel a:hover {
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+}
+
+.panel .title:hover {
+  -webkit-transform: translateX(30px);
+          transform: translateX(30px);
+}
+
+.panel .title:hover::before {
+  width: 20px;
+}
+
+.panel .title::before {
+  content: " ";
+  width: 0px;
+  height: 3px;
+  background-color: #F5C615;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: -23px;
+  -webkit-transition: width .3s;
+  transition: width .3s;
+}
+
+.panel li {
+  list-style: none;
+  color: #636363;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+  position: relative;
+}
+
+.panel li:hover {
+  cursor: pointer;
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+}
+/*# sourceMappingURL=offcanvas.css.map */

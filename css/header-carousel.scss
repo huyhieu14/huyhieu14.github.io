@@ -1,0 +1,172 @@
+#myCarouselHeader {
+    .carousel {
+        width: 100%;
+        height: 100%;
+    }
+    .carousel-inner {
+        height: 761px;
+    }
+    .carousel-indicators {
+        padding: 0px;
+        margin: 0px;
+        li {
+            background-color: black;
+        }
+    }
+    .btn {
+        width: 134px;
+        height: 49px;
+        border: 1px solid white;
+        border-radius: 50px;
+        position: absolute;
+        z-index: 98;
+        top: 40%;
+        left: 48%;
+        transform: translateX(-50%);
+        font-size: 15px;
+        font-weight: bold;
+        color: white;
+    }
+    .btn-icon {
+        i {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 25px;
+        }
+        right: -20%;
+        top: 0%;
+        position: absolute;
+        display: block;
+        width: 45px;
+        height: 45px;
+        background-color: #F5C615;
+        border-radius: 50px;
+    }
+    .btn:hover {
+            transition: all .8s;
+            box-shadow: 0px 0px 10px 0px #ffffff;
+        .btn-icon {
+            z-index: 99;
+            transition: all .5s;
+            box-shadow: 0px 0px 10px 0px #ffd84c;
+        }
+    }
+    .slide-header-1 {
+        img {
+            position: relative;
+            margin-left: 20%;
+            ;
+            margin-right: 20%;
+        }
+        .text-header {
+            position: absolute;
+            z-index: 98;
+            left: 49%;
+            transform: translateX(-50%);
+            font-size: 123px;
+            font-weight: bold;
+            color: white;
+        }
+    }
+    .slide-header-2 {
+        h1 {
+            top: 30%;
+            position: absolute;
+            z-index: 98;
+            left: 18%;
+            transform: translateX(-50%);
+            font-size: 50px;
+            font-weight: bold;
+        }
+        p {
+            width: 449px;
+            top: 45%;
+            position: absolute;
+            z-index: 98;
+            left: 24%;
+            transform: translateX(-50%);
+            font-size: 15px;
+            font-weight: bold;
+        }
+        img {
+            padding-left: 350px;
+        }
+        .btn {
+            top: 65%;
+            left: 9%;
+        }
+        .btn:hover{
+            transition: all .8s;
+            box-shadow: 0px 0px 10px 0px #ffffff;
+        }
+    }
+    .slide-header-3 {
+        img {
+            padding-left: 55%;
+        }
+        h1 {
+            top: 30%;
+            position: absolute;
+            z-index: 98;
+            left: 31%;
+            transform: translateX(-50%);
+            font-size: 50px;
+            font-weight: bold;
+            color: white;
+        }
+        p {
+            cursor: pointer;
+            top: 60%;
+            left: 22%;
+            width: 150px;
+            height: 49px;
+            border: 1px solid white;
+            border-radius: 50px;
+            position: absolute;
+            z-index: 98;
+            transform: translateX(-50%);
+            font-size: 15px;
+            font-weight: bold;
+            color: white;
+        }
+        p:hover {
+            transition: all .8s;
+            box-shadow: 0px 0px 10px 0px #ffffff;
+        }
+        .btn {
+            top: 60%;
+            left: 37%;
+        }
+        
+        .btn-z {
+            left: 37%;
+            background-color: transparent;
+            color: white;
+        }
+        .btn:hover{
+            transition: all .8s;
+            box-shadow: 0px 0px 10px 0px #ffffff;
+        }
+    }
+}
+
+// @media (max-width: 1199.98px){
+//     #myCarouselHeader {
+//         .slide-header-1 {
+//             img{
+//                 transform: translateX(25%);
+//             }
+//         }
+//     }
+// }
+// @media (max-width: 1399.98px) { 
+//     #myCarouselHeader {
+//         .slide-header-1 {
+//             img{
+//                 transform: translateX(40%);
+//             }
+//         }
+//     }
+// }

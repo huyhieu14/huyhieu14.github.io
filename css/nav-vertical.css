@@ -1,0 +1,73 @@
+.nav-vertical {
+  width: 60px;
+  height: 420px;
+  background-color: #1a1a1a;
+  position: relative;
+}
+
+.nav-vertical li {
+  width: 60px;
+  height: 60px;
+}
+
+.nav-vertical a {
+  text-decoration: none;
+  color: white;
+  font-size: 27px;
+  font-weight: 1px;
+  line-height: 60px;
+}
+
+.nav-vertical a:hover {
+  color: #f5c615;
+}
+
+.nav-active {
+  visibility: hidden;
+  width: 0px;
+  height: 360px;
+  position: absolute;
+  background-color: #141414;
+  left: 100%;
+  top: 60px;
+  opacity: 0;
+  z-index: 99;
+}
+
+.nav-active li {
+  width: 220px;
+  list-style: none;
+  margin: auto;
+}
+
+.nav-active img {
+  border: 2px solid #f5c615;
+  width: 360px;
+  height: 360px;
+}
+
+.nav-active a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-weight: 1px;
+  line-height: 60px;
+}
+
+.nav-active a:hover {
+  color: #f5c615;
+}
+
+.nav-item:hover {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.nav-item:hover .nav-active {
+  visibility: visible;
+  opacity: 1;
+  width: 500px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+/*# sourceMappingURL=nav-vertical.css.map */
