@@ -2,25 +2,27 @@
         margin: 0;
         padding: 0;
     }
-    
+
     .header-top {
         height: 40px;
         background-color: black;
     }
-    
+
     .background-header {
         background-image: url('/asset/background/slide-show-2.jpg');
         background-repeat: no-repeat;
     }
-    
+
     .menu-header {
         .level-1 {
             &:hover {
                 transform: translateX(30px);
+
                 &::before {
                     width: 20px;
                 }
             }
+
             & {
                 &::before {
                     content: " ";
@@ -35,41 +37,49 @@
                 }
             }
         }
+
         li {
             list-style: none;
             color: rgb(99, 99, 99);
             transition: transform 0.2s;
             position: relative;
         }
+
         li:hover {
             cursor: pointer;
             transform: translateX(10px);
         }
     }
-    
+
     .hiden-header {
         h1 {
             padding-top: 100px;
         }
+
         height: 250px;
         background-image: url('/asset/background/Dana-home3-slideshow.jpg');
         background-repeat: no-repeat;
     }
-    
+
     .popular {
         background-color: #F6F6F6;
+
         button {
             color: black;
         }
+
         button:hover {
             color: #F5C615;
         }
+
         .nav-tabs {
             font-size: 25px;
             border: none;
+
             .nav-link {
                 border: none;
             }
+
             .nav-link.active {
                 border: none;
                 background-color: #F6F6F6;
@@ -77,58 +87,65 @@
             }
         }
     }
-    
+
     .hot-deal {
         background-image: url('/asset/background/home3-hot-deta.jpg');
     }
-    
+
     .slide-hot {
         margin-top: 5%;
         margin-bottom: 5%;
     }
-    
+
     .btn-2 {
         background-color: #F6F6F6;
         width: 60px;
         height: 60px;
     }
-    
+
     .btn-2:hover {
         border: 2px solid #F5C615;
     }
-    
+
     .btn-2:active {
         border: 2px solid #F5C615;
     }
-    
+
     .bestsale {
         background-image: url('/asset/background/Dana-home1-bg-featured.jpg');
         background-repeat: no-repeat;
+
         .nav-tabs .nav-item.show .nav-link,
         .nav-tabs .nav-link.active {
             border-bottom: 2px solid #F5C615;
         }
+
         .nav-tabs .nav-link {
             border: none;
             color: black;
         }
     }
-    
+
     @media (max-width: 380px) {
         .popular {
             background-color: #F6F6F6;
+
             button {
                 color: black;
             }
+
             button:hover {
                 color: #F5C615;
             }
+
             .nav-tabs {
                 font-size: 16px;
                 border: none;
+
                 .nav-link {
                     border: none;
                 }
+
                 .nav-link.active {
                     border: none;
                     background-color: #F6F6F6;
@@ -137,23 +154,23 @@
             }
         }
     }
-    
+
     // X-Small devices (portrait phones, less than 576px)
     @media (max-width: 575.98px) {
         .top-header {
             background-color: black;
         }
     }
-    
+
     // Small devices (landscape phones, less than 768px)
     @media (max-width: 767.98px) {}
-    
+
     // Medium devices (tablets, less than 992px)
     @media (max-width: 991.98px) {}
-    
+
     // Large devices (desktops, less than 1200px)
     @media (max-width: 1199.98px) {}
-    
+
     // X-Large devices (large desktops, less than 1400px)
     @media (max-width: 1399.98px) {
         .product-vtc {
