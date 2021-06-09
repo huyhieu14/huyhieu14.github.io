@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="/css/nav-vertical.css">
     <link rel="stylesheet" href="/css/header-carousel.css">
     <link rel="stylesheet" href="/css/footer.css">
-    <script src="./script/header.js"></script>
+    <!-- <script src="./script/header.js"></script> -->
     <!-- <script src="/script/vertical.js"></script> -->
 </head>
 
@@ -52,7 +52,7 @@
                                             <h6 class="card-subtitle mb-1 text-muted pt-2">GIÁ: <span class="text-warning">15.690.000₫</span></h6>
                                         </div>
                                         <div class="icon-3 w-100">
-                                            <input class="btn input-prev" type='button' value='-' />
+                                            <input class="btn" onclick="var result = document.getElementById('quantity'); var qty = result.value; if( !isNaN(qty) && qty > 1 ) result.value--;return false;" type='button' value='-' />
                                             <input style="width: 30px;" id='quantity' min='1' name='quantity' type='text' value='1' />
                                             <input class="btn" onclick="var result = document.getElementById('quantity'); var qty = result.value; if( !isNaN(qty)) result.value++;return false;" type='button' value='+' />
                                             <button class="btn p-0 ms-2"><i class="fal fa-trash-alt"></i></button>
@@ -71,9 +71,9 @@
                                             <h6 class="card-subtitle mb-1 text-muted pt-2">GIÁ: <span class="text-warning">15.690.000₫</span></h6>
                                         </div>
                                         <div class="icon-3 w-100">
-                                            <input class="btn input-prev" onclick="var result = document.getElementById('quantity'); var qty = result.value; if( !isNaN(qty) && qty > 1 ) result.value--;return false;" type='button' value='-' />
-                                            <input style="width: 30px;" id='quantity' min='1' name='quantity' type='text' value='1' />
-                                            <input class="btn" onclick="var result = document.getElementById('quantity'); var qty = result.value; if( !isNaN(qty)) result.value++;return false;" type='button' value='+' />
+                                            <input class="btn" onclick="var result = document.getElementById('quantity1'); var qty1 = result.value; if( !isNaN(qty1) && qty1 > 1 ) result.value--;return false;" type='button' value='-' />
+                                            <input style="width: 30px;" id='quantity1' min='1' name='quantity1' type='text' value='1' />
+                                            <input class="btn" onclick="var result = document.getElementById('quantity1'); var qty1 = result.value; if( !isNaN(qty1)) result.value++;return false;" type='button' value='+' />
                                             <button class="btn p-0 ms-2"><i class="fal fa-trash-alt"></i></button>
                                         </div>
                                     </div>
