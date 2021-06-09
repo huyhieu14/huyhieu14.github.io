@@ -32,6 +32,22 @@
 .header .midle-header .nav-item a {
   color: white;
 }
+.bottomheader{
+  width: 100%;
+  height: 50px;
+  background-color: black;
+}
+.nav-bo a{
+  color: white;
+}
+
+.nav-bo .nav-link:active{
+  color: #f5c615;
+}
+
+.nav-bo a:hover{
+  color: #f5c615;
+}
 
 .header .form-control {
   position: relative;
