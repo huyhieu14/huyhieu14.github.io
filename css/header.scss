@@ -22,6 +22,10 @@
     .nav-link {
         color: white;
     }
+    .nav-link:hover {
+        color: #f5c615;
+        transition: all 0.8s
+    }
     .top-header {
         width: 100%;
         height: 40px;
