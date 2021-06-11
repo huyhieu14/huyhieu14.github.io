@@ -22,8 +22,7 @@
     <link rel="stylesheet" href="/css/nav-vertical.css">
     <link rel="stylesheet" href="/css/header-carousel.css">
     <link rel="stylesheet" href="/css/footer.css">
-    <!-- <script src="./script/header.js"></script> -->
-    <!-- <script src="/script/vertical.js"></script> -->
+    <script src="script/scroll.js"></script>
 </head>
 
 <body>
@@ -95,7 +94,8 @@
                 </div>
                 <div class="col-8 text-end align-self-center p-0">
                     <a href="/html/404.html" class="text-white ms-2"><i class="fal fa-wrench me-2"></i><span class="d-none d-md-inline-block">Bảo Hành</span></a>
-                    <a href="" class="text-white ms-3"><i class="fal fa-map-marker-alt me-2"></i><span class="d-none d-md-inline-block">Địa Chỉ Shop</span></a>
+                    <a href="https://www.google.com/maps/place/113+Tr%E1%BA%A7n+Ph%C3%BA,+Ph%C6%B0%E1%BB%9Bc+V%C4%A9nh,+Th%C3%A0nh+ph%E1%BB%91+Hu%E1%BA%BF,+Th%E1%BB%ABa+Thi%C3%AAn+Hu%E1%BA%BF,+Vi%E1%BB%87t+Nam/@16.4517489,107.5886257,17z/data=!3m1!4b1!4m5!3m4!1s0x3141a1441481f44f:0x65c5518a727ee6c5!8m2!3d16.4517438!4d107.5908144?hl=vi-VN"
+                        class="text-white ms-3"><i class="fal fa-map-marker-alt me-2"></i><span class="d-none d-md-inline-block">Địa Chỉ Shop</span></a>
                     <a href="" class="text-white ms-3"><i class="fal fa-money-bill me-2"></i><span class="d-none d-md-inline-block">VND (VN)</span></a>
                     <a href="/html/login.html" class="text-white ms-3"><i class="fal fa-user me-2"></i><span class="d-none d-md-inline-block">Tài Khoản</span></a>
                 </div>
@@ -153,7 +153,7 @@
                             </div>
                         </div>
                         <div class="align-self-center ms-2">
-                            <img src="/asset/logo/Dana-menu-logo.png" alt="">
+                            <a href="index.html"><img src="/asset/logo/Dana-menu-logo.png" alt=""></a>
                         </div>
                     </div>
                     <div>
@@ -175,13 +175,13 @@
                 <div class="menu-header col-sm-10 d-flex pt-5 justify-content-center list-unstyled text-decoration-none d-none d-md-flex">
                     <ul>
                         <li class="level-1">
-                            <a href="" class="text-white text-decoration-none fw-bold fs-5">Trang Chủ</a>
+                            <a href="index.html" class="text-white text-decoration-none fw-bold fs-5">Trang Chủ</a>
                         </li>
                         <li class="pt-3">
-                            <a href="" class="text-secondary text-decoration-none">Trang Chủ</a>
+                            <a href="index.html" class="text-secondary text-decoration-none">Trang Chủ</a>
                         </li>
                         <li>
-                            <a href="" class="text-secondary text-decoration-none">Về Chúng Tôi</a>
+                            <a href="/html/about.html" class="text-secondary text-decoration-none">Về Chúng Tôi</a>
                         </li>
                         <li>
                             <a href="/html/contact.html" class="text-secondary text-decoration-none">Phản Hồi</a>
@@ -190,28 +190,28 @@
                     </ul>
                     <ul class="ms-5">
                         <li class="level-1">
-                            <a href="" class="text-white text-decoration-none fw-bold fs-5">SẢN PHẨM</a>
+                            <a href="/html/shoplisting.html" class="text-white text-decoration-none fw-bold fs-5">SẢN PHẨM</a>
                         </li>
                         <li class="pt-3">
-                            <a href="" class="text-secondary text-decoration-none">Sản Phẩm Mới</a>
+                            <a href="#scroll-1" class="text-secondary text-decoration-none">Sản Phẩm Mới</a>
                         </li>
                         <li>
-                            <a href="" class="text-secondary text-decoration-none">Sản Phẩm Hot</a>
+                            <a href="#scroll-2" class="text-secondary text-decoration-none">Sản Phẩm Hot</a>
                         </li>
                         <li>
-                            <a href="" class="text-secondary text-decoration-none">Sale Off</a>
+                            <a href="#scroll-3" class="text-secondary text-decoration-none">Sale Off</a>
                         </li>
 
                     </ul>
                     <ul class="ms-5">
                         <li class="level-1">
-                            <a href="" class="text-white text-decoration-none fw-bold fs-5">BLOG</a>
+                            <a href="/html/bloglist.html" class="text-white text-decoration-none fw-bold fs-5">BLOG</a>
                         </li>
                         <li class="pt-3">
-                            <a href="" class="text-secondary text-decoration-none">Blog Mới</a>
+                            <a href="/html/bloglist.html" class="text-secondary text-decoration-none">Blog Mới</a>
                         </li>
                         <li>
-                            <a href="" class="text-secondary text-decoration-none">Lester</a>
+                            <a href="#" class="text-secondary text-decoration-none">Lester</a>
                         </li>
                     </ul>
                 </div>
@@ -563,7 +563,7 @@
     <div class="container-fluid mt-5 pb-5 ">
         <div class="container ">
             <div class="row pt-5 ">
-                <div class="col-lg-6 pe-lg-5 ">
+                <div class="col-lg-6 pe-lg-5 " id="scroll-1">
                     <img src="/asset/background/home2-banner.png " alt=" " class="img-fluid display: block ">
                     <div>
                         <p class="text-center pt-5 "><b>IPHONE 6S SILVER-64GB</b></p>
@@ -1712,7 +1712,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid hot-deal pt-5 mb-5">
+    <div class="container-fluid hot-deal pt-5 mb-5 " id="scroll-2">
         <div class="container overflow-hidden">
             <div class="row slide-hot">
                 <div class="col-lg-5 overflow-hidden m-0">
@@ -1783,7 +1783,7 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid pt-5 pb-5 bestsale">
+    <div class="container-fluid pt-5 pb-5 bestsale " id="scroll-3">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
