@@ -203,7 +203,7 @@
         .carousel-inner {
             width: 100%;
             height: auto;
-            position:relative;
+            position: relative;
         }
         .carousel-indicators {
             position: relative;
@@ -220,7 +220,6 @@
             text-indent: 0;
         }
     }
-
     .prd-right {
         color: white;
         background-color: #313131;
@@ -247,51 +246,16 @@
                 background-color: #000000;
                 color: white;
             }
-            
         }
-        .list-color {
-            li {
-                height: 30px;
-                width: 30px;
-                background: rgba(255, 255, 255, 0);
-                border-radius: 50%;
-                display: inline-block;
-                margin: 5px 20px 5px 0px;
-            }
-            .black {
-                background-color: black;
-                border-radius: 30px;
-                transition: all 0.6s;
-                &:hover{
-                    transform: scale(1.5);
-                }
-            }
-            .gold {
-                background-color: rgb(255, 196, 0);
-                border-radius: 30px;
-                transition: all 0.6s;
-                &:hover{
-                    transform: scale(1.5);
-                }
-            }
-            .sliver{
-                background-color: #575757;
-                border-radius: 30px;
-                transition: all 0.6s;
-                &:hover{
-                    transform: scale(1.5);
-                }
-            }
-        }
-        .btn{
+        .btn {
             padding: 0px;
             width: 30px;
             height: 30px;
             background-color: #f5c615;
-            vertical-align:baseline;
+            vertical-align: baseline;
         }
         .btn-buy {
-            background-color: rgba(255, 255, 255, 0)  ;
+            background-color: rgba(255, 255, 255, 0);
             width: 134px;
             height: 30px;
             border: 2px solid white;
@@ -300,7 +264,7 @@
             font-size: 15px;
             font-weight: bold;
             color: white;
-            &:hover{
+            &:hover {
                 transition: all .8s;
                 box-shadow: 0px 0px 10px 0px #ffffff;
             }
@@ -323,8 +287,8 @@
             border-radius: 50px;
         }
         .btn:hover {
-                transition: all .8s;
-                box-shadow: 0px 0px 10px 0px #ffffff;
+            transition: all .8s;
+            box-shadow: 0px 0px 10px 0px #ffffff;
             .btn-icon {
                 z-index: 99;
                 transition: all .5s;
@@ -337,11 +301,12 @@
 .checked {
     color: orange;
 }
+
 .selected {
     color: #FFA500;
- }
+}
 
-.tab-product{
+.tab-product {
     .nav-tabs .nav-item.show .nav-link,
     .nav-tabs .nav-link.active {
         border-bottom: 2px solid #f5c615;
@@ -351,6 +316,144 @@
         color: black;
     }
 }
+
+.list-color {
+    li {
+        height: 30px;
+        width: 30px;
+        background: rgba(255, 255, 255, 0);
+        border-radius: 50%;
+        display: inline-block;
+        margin: 5px 20px 5px 0px;
+    }
+    .black {
+        background-color: black;
+        border-radius: 30px;
+        transition: all 0.6s;
+        &:hover {
+            transform: scale(1.5);
+        }
+    }
+    .gold {
+        background-color: rgb(255, 196, 0);
+        border-radius: 30px;
+        transition: all 0.6s;
+        &:hover {
+            transform: scale(1.5);
+        }
+    }
+    .sliver {
+        background-color: #575757;
+        border-radius: 30px;
+        transition: all 0.6s;
+        &:hover {
+            transform: scale(1.5);
+        }
+    }
+    .blue {
+        background-color: rgb(0, 38, 255);
+        border-radius: 30px;
+        transition: all 0.6s;
+        &:hover {
+            transform: scale(1.5);
+        }
+    }
+    .brown {
+        background-color: rgb(131, 74, 1);
+        border-radius: 30px;
+        transition: all 0.6s;
+        &:hover {
+            transform: scale(1.5);
+        }
+    }
+    .red {
+        background-color: rgb(255, 0, 0);
+        border-radius: 30px;
+        transition: all 0.6s;
+        &:hover {
+            transform: scale(1.5);
+        }
+    }
+    .pink {
+        background-color: rgb(255, 0, 98);
+        border-radius: 30px;
+        transition: all 0.6s;
+        &:hover {
+            transform: scale(1.5);
+        }
+    }
+    .green {
+        background-color: rgb(43, 255, 0);
+        border-radius: 30px;
+        transition: all 0.6s;
+        &:hover {
+            transform: scale(1.5);
+        }
+    }
+    .lightblue {
+        background-color: rgb(0, 225, 255);
+        border-radius: 30px;
+        transition: all 0.6s;
+        &:hover {
+            transform: scale(1.5);
+        }
+    }
+    .white {
+        background-color: rgb(255, 255, 255);
+        border-radius: 30px;
+        border: 1px solid black;
+        transition: all 0.6s;
+        &:hover {
+            transform: scale(1.5);
+        }
+    }
+}
+
+.shoplist {
+    .sort select {
+        box-shadow: none;
+    }
+    .accordion-item {
+        border: none;
+    }
+    .accordion-item:first-of-type .accordion-button {
+        border-top-left-radius: calc(.25rem - 1px);
+        border-top-right-radius: calc(.25rem - 1px);
+    }
+    .accordion-button:not(.collapsed)::after {
+        filter: grayscale(1);
+    }
+    .accordion-button:not(.collapsed) {
+        color: black;
+        background-color: #ffffff00;
+        box-shadow: none;
+    }
+}
+
+.form-check-input:checked {
+    background-color: black;
+    border-color: black;
+}
+
+.range-slide {
+    .irs--flat .irs-bar {
+        background-color: #f5c615;
+    }
+    .irs--flat .irs-from,
+    .irs--flat .irs-to,
+    .irs--flat .irs-single {
+        background-color: #f5c615;
+    }
+    .irs--flat .irs-handle>i:first-child {
+        background-color: #2D5593;
+    }
+    .irs--flat .irs-from:before,
+    .irs--flat .irs-to:before,
+    .irs--flat .irs-single:before {
+        border-top-color: #2D5593;
+    }
+}
+
 // X-Small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
     .top-header {
@@ -359,16 +462,13 @@
 }
 
 // Small devices (landscape phones, less than 768px)
-@media (max-width: 767.98px) {
-}
+@media (max-width: 767.98px) {}
 
 // Medium devices (tablets, less than 992px)
-@media (max-width: 991.98px) {
-}
+@media (max-width: 991.98px) {}
 
 // Large devices (desktops, less than 1200px)
-@media (max-width: 1199.98px) {
-}
+@media (max-width: 1199.98px) {}
 
 // X-Large devices (large desktops, less than 1400px)
 @media (max-width: 1399.98px) {
