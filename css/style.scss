@@ -454,6 +454,59 @@
     }
 }
 
+.blog {
+    .card-body {
+        a {}
+        .btn {
+            border-radius: 20px;
+        }
+    }
+    .card:hover {
+        position: relative;
+        z-index: 99;
+        transition: all .5s;
+        box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 0.41);
+    }
+    .input-group:not(.has-validation)>.dropdown-toggle:nth-last-child(n+3),
+    .input-group:not(.has-validation)>:not(:last-child):not(.dropdown-toggle):not(.dropdown-menu) {
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    .search {
+        .form-control {
+            position: relative;
+            border-radius: 20px;
+        }
+        .btn {
+            position: absolute;
+            color: black;
+            z-index: 99;
+        }
+    }
+    .level-1 {
+        &:hover {
+            transition: all 0.4s;
+            transform: translateX(30px);
+            &::before {
+                width: 20px;
+            }
+        }
+        & {
+            &::before {
+                content: " ";
+                width: -1px;
+                height: 2px;
+                background-color: #000000;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: -23px;
+                transition: width 0.3s;
+            }
+        }
+    }
+}
+
 // X-Small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
     .top-header {

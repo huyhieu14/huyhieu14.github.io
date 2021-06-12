@@ -423,6 +423,48 @@
   border-top-color: #2D5593;
 }
 
+.blog .card-body .btn {
+  border-radius: 20px;
+}
+.blog .card:hover {
+  position: relative;
+  z-index: 99;
+  transition: all 0.5s;
+  box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 0.41);
+}
+.blog .input-group:not(.has-validation) > .dropdown-toggle:nth-last-child(n+3),
+.blog .input-group:not(.has-validation) > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu) {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.blog .search .form-control {
+  position: relative;
+  border-radius: 20px;
+}
+.blog .search .btn {
+  position: absolute;
+  color: black;
+  z-index: 99;
+}
+.blog .level-1:hover {
+  transition: all 0.4s;
+  transform: translateX(30px);
+}
+.blog .level-1:hover::before {
+  width: 20px;
+}
+.blog .level-1::before {
+  content: " ";
+  width: -1px;
+  height: 2px;
+  background-color: #000000;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -23px;
+  transition: width 0.3s;
+}
+
 @media (max-width: 575.98px) {
   .top-header {
     background-color: black;
