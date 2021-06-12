@@ -120,6 +120,7 @@
 .bestsale .nav-tabs .nav-item.show .nav-link,
 .bestsale .nav-tabs .nav-link.active {
   border-bottom: 2px solid #f5c615;
+  background-color: #ffffff00;
 }
 
 .bestsale .nav-tabs .nav-link {
