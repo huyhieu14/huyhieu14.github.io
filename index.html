@@ -22,7 +22,8 @@
     <link rel="stylesheet" href="/css/nav-vertical.css">
     <link rel="stylesheet" href="/css/header-carousel.css">
     <link rel="stylesheet" href="/css/footer.css">
-    <script src="script/scroll.js"></script>
+    <!-- <script src="script/scroll.js"></script> -->
+    <script src="script/addProduct.js"></script>
 </head>
 
 <body>
@@ -39,54 +40,16 @@
                             <h3 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Giỏ Hàng</h3>
                             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                         </div>
-                        <div class="offcanvas-body">
-                            <div class="card product-xl border-1">
-                                <div class="row">
-                                    <div class="col-lg-6 ">
-                                        <img src="/asset/product/laptop/acernt5-1.jpg" class="card-img w-100 img-fuild ps-2 pe-2" alt="...">
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Acer Nitro 5 VLSM5</h5>
-                                            <h6 class="card-subtitle mb-1 text-muted pt-2">GIÁ: <span class="text-warning">15.690.000₫</span></h6>
-                                        </div>
-                                        <div class="icon-3 w-100">
-                                            <input class="btn" onclick="var result = document.getElementById('quantity'); var qty = result.value; if( !isNaN(qty) && qty > 1 ) result.value--;return false;" type='button' value='-' />
-                                            <input style="width: 30px;" id='quantity' min='1' name='quantity' type='text' value='1' />
-                                            <input class="btn" onclick="var result = document.getElementById('quantity'); var qty = result.value; if( !isNaN(qty)) result.value++;return false;" type='button' value='+' />
-                                            <button class="btn p-0 ms-2"><i class="fal fa-trash-alt"></i></button>
-                                        </div>
-                                    </div>
-                                </div>
+                        <div class="offcanvas-body" id="list-cart">
+
+                        </div>
+                        <div class="row " style="position: fixed; bottom: 0px;left: 0px">
+                            <div class="col-12 ps-5">
+                                <span>Tổng Thanh Toán: </span>
+                                <span id="total-price"></span>
                             </div>
-                            <div class="card product-xl border-1">
-                                <div class="row">
-                                    <div class="col-lg-6 ">
-                                        <img src="/asset/product/laptop/acernt5-1.jpg" class="card-img w-100 img-fuild ps-2 pe-2" alt="...">
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Acer Nitro 5 VLSM5</h5>
-                                            <h6 class="card-subtitle mb-1 text-muted pt-2">GIÁ: <span class="text-warning">15.690.000₫</span></h6>
-                                        </div>
-                                        <div class="icon-3 w-100">
-                                            <input class="btn" onclick="var result = document.getElementById('quantity1'); var qty1 = result.value; if( !isNaN(qty1) && qty1 > 1 ) result.value--;return false;" type='button' value='-' />
-                                            <input style="width: 30px;" id='quantity1' min='1' name='quantity1' type='text' value='1' />
-                                            <input class="btn" onclick="var result = document.getElementById('quantity1'); var qty1 = result.value; if( !isNaN(qty1)) result.value++;return false;" type='button' value='+' />
-                                            <button class="btn p-0 ms-2"><i class="fal fa-trash-alt"></i></button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="row">
-                                <div class="col-7">
-                                    <h5>Tổng Thanh Toán: </h5>
-                                    <p>8.990.000₫</p>
-                                </div>
-                                <div class="col-5">
-                                    <button type="button" class="btn btn-primary mt-4">Thanh Toán</button>
-                                </div>
+                            <div class="col-12 text-center">
+                                <button type="button" class="btn btn-primary mt-4 w-75">Thanh Toán</button>
                             </div>
                         </div>
                     </div>
@@ -582,15 +545,18 @@
                             <div class="card">
                                 <div class="card-body d-block">
                                     <p class="text-primary p-0 m-0"><a href="" class="text-decoration-none">#SmartPhone</a></p>
-                                    <h5 class="card-title ">Samsung Galaxy Fold</h5>
-                                    <h6 class="card-text p-0 m-0">PRICE: <span class="text-warning">42.500.000 ₫</span></h6>
+                                    <h5 class="card-title">Samsung Galaxy Fold</h5>
+                                    <h6 class="card-text p-0 m-0">PRICE: <span class="text-warning price">42500000
+                                        </span>₫
+                                    </h6>
                                 </div>
                                 <div class="card-img m-auto p-5">
                                     <img src="/asset/product/smartphone/GLXF.jpg" alt="" class="img-product">
                                 </div>
                                 <div class="icon-3 m-auto pt-1 text-center">
-                                    <button class="btn p-0"><a href="" class="text-white text-decoration-none"><i class="fal fa-eye text-center"></i></a></button>
-                                    <button class="btn p-0 ms-3"><i class="fal fa-heart"></i></button>
+                                    <button class="btn p-0"><a href="" class="text-white text-decoration-none"><i
+                                                class="fal fa-eye text-center"></i></a></button>
+                                    <button class="btn button-add p-0 ms-3 fal fa-heart"></button>
                                     <button class="btn p-0 ms-3"><i class="fal fa-cart-plus"></i></button>
                                 </div>
                             </div>
@@ -602,14 +568,17 @@
                                         <a href="" class="text-decoration-none"> <a href="" class="text-decoration-none">#HeadPhone</a></a>
                                     </p>
                                     <h5 class="card-title ">Sony Extra Bass XB700</h5>
-                                    <h6 class="card-text p-0 m-0">PRICE: <span class="text-warning">2.990.000 ₫</span></h6>
+                                    <h6 class="card-text p-0 m-0">PRICE: <span class="text-warning price price">2990000
+                                        </span>₫
+                                    </h6>
                                 </div>
                                 <div class="card-img m-auto p-5">
-                                    <img src="/asset/product/headphone/snexb.jpg" alt="" class="img-fluid">
+                                    <img src="/asset/product/headphone/snexb.jpg" alt="" class="img-fluid img-product">
                                 </div>
                                 <div class="icon-3 m-auto pt-1 text-center">
-                                    <button class="btn p-0"><a href="" class="text-white text-decoration-none"><i class="fal fa-eye text-center"></i></a></button>
-                                    <button class="btn p-0 ms-3"><i class="fal fa-heart"></i></button>
+                                    <button class="btn p-0"><a href="" class="text-white text-decoration-none"><i
+                                                class="fal fa-eye text-center"></i></a></button>
+                                    <button class="btn p-0 button-add ms-3 fal fa-heart"></button>
                                     <button class="btn p-0 ms-3"><i class="fal fa-cart-plus"></i></button>
                                 </div>
                             </div>
@@ -617,16 +586,20 @@
                         <div class="col-md-6 card-group product-vtc overflow-hidden p-0">
                             <div class="card">
                                 <div class="card-body d-block">
-                                    <p class="text-primary p-0 m-0"><a href="" class="text-decoration-none">#Watch</a></p>
+                                    <p class="text-primary p-0 m-0"><a href="" class="text-decoration-none">#Watch</a>
+                                    </p>
                                     <h5 class="card-title ">Apple Watch Seri 6</h5>
-                                    <h6 class="card-text p-0 m-0">PRICE: <span class="text-warning">11.990.000 ₫</span></h6>
+                                    <h6 class="card-text p-0 m-0">PRICE: <span class="text-warning price">11990000
+                                        </span>₫
+                                    </h6>
                                 </div>
                                 <div class="card-img m-auto p-5">
-                                    <img src="/asset/product/smartwatch/sr6.jpg" alt="" class="img-fluid">
+                                    <img src="/asset/product/smartwatch/sr6.jpg" alt="" class="img-fluid img-product">
                                 </div>
                                 <div class="icon-3 m-auto pt-1 text-center">
-                                    <button class="btn p-0"><a href="" class="text-white text-decoration-none"><i class="fal fa-eye text-center"></i></a></button>
-                                    <button class="btn p-0 ms-3"><i class="fal fa-heart"></i></button>
+                                    <button class="btn p-0"><a href="" class="text-white text-decoration-none"><i
+                                                class="fal fa-eye text-center"></i></a></button>
+                                    <button class="btn p-0 button-add ms-3 fal fa-heart"></i></button>
                                     <button class="btn p-0 ms-3"><i class="fal fa-cart-plus"></i></button>
                                 </div>
                             </div>
@@ -634,16 +607,20 @@
                         <div class="col-md-6 card-group product-vtc overflow-hidden p-0">
                             <div class="card">
                                 <div class="card-body d-block">
-                                    <p class="text-primary p-0 m-0"><a href="" class="text-decoration-none">#GamePad</a></p>
+                                    <p class="text-primary p-0 m-0"><a href="" class="text-decoration-none">#GamePad</a>
+                                    </p>
                                     <h5 class="card-title ">Sony PS5 DualSense</h5>
-                                    <h6 class="card-text p-0 m-0">PRICE: <span class="text-warning">2.099.000 ₫</span></h6>
+                                    <h6 class="card-text p-0 m-0">PRICE: <span class="text-warning price">2099000
+                                        </span>₫
+                                    </h6>
                                 </div>
                                 <div class="card-img m-auto p-5">
-                                    <img src="/asset/product/gamepad/ps5.jpg" alt="" class="img-fluid">
+                                    <img src="/asset/product/gamepad/ps5.jpg" alt="" class="img-fluid img-product">
                                 </div>
                                 <div class="icon-3 m-auto pt-1 text-center">
-                                    <button class="btn p-0"><a href="" class="text-white text-decoration-none"><i class="fal fa-eye text-center"></i></a></button>
-                                    <button class="btn p-0 ms-3"><i class="fal fa-heart"></i></button>
+                                    <button class="btn p-0"><a href="" class="text-white text-decoration-none"><i
+                                                class="fal fa-eye text-center"></i></a></button>
+                                    <button class="btn p-0 button-add ms-3 fal fa-heart"></button>
                                     <button class="btn p-0 ms-3"><i class="fal fa-cart-plus"></i></button>
                                 </div>
                             </div>
