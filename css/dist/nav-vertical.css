@@ -52,11 +52,11 @@
 }
 
 .nav-item:hover {
-  transition: all 0.5s;
+  transition: all 0.2s;
 }
 .nav-item:hover .nav-active {
   visibility: visible;
   opacity: 1;
   width: 500px;
-  transition: all 0.5s;
+  transition: all 0.2s;
 }
