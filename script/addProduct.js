@@ -1,31 +1,31 @@
 $(() => {
-  var button = document.getElementsByClassName("button-add");
-  for (const btn of button) {
-    btn.addEventListener("click", addToCartClicked);
-  }
-  deleteEventButton();
+    var button = document.getElementsByClassName("button-add");
+    for (const btn of button) {
+        btn.addEventListener("click", addToCartClicked);
+    }
+    deleteEventButton();
 });
 
 deleteEventButton = () => {
-  var buttonDelete = document.getElementsByClassName("button-delete");
-  for (const btn of buttonDelete) {
-    btn.addEventListener("click", deleteClicked);
-  }
+    var buttonDelete = document.getElementsByClassName("button-delete");
+    for (const btn of buttonDelete) {
+        btn.addEventListener("click", deleteClicked);
+    }
 };
 
 addToCartClicked = (event) => {
-  var button = event.target;
-  var parent = button.parentElement.parentElement.parentElement;
-  var img = parent.getElementsByClassName("img-product")[0].src;
-  var name = parent.getElementsByClassName("card-title")[0].innerText;
-  var price = parent.getElementsByClassName("price")[0].innerText;
-  addToCart(img, name, price);
+    var button = event.target;
+    var parent = button.parentElement.parentElement.parentElement;
+    var img = parent.getElementsByClassName("img-product")[0].src;
+    var name = parent.getElementsByClassName("card-title")[0].innerText;
+    var price = parent.getElementsByClassName("price")[0].innerText;
+    addToCart(img, name, price);
 };
 
 addToCart = (img, name, price) => {
-  var items = document.getElementById("list-cart");
-  var item = items.getElementsByClassName("card");
-  var htmls = `
+    var items = document.getElementById("list-cart");
+    var item = items.getElementsByClassName("card");
+    var htmls = `
     <div class="card product-xl border-1">
         <div class="row">
             <div class="col-lg-6 ">
@@ -52,37 +52,37 @@ addToCart = (img, name, price) => {
         </div>
     </div>
     `;
-  $("#list-cart").append(htmls);
-  deleteEventButton();
-  quantity();
-  updatePrice();
+    $("#list-cart").append(htmls);
+    deleteEventButton();
+    quantity();
+    updatePrice();
 };
 deleteClicked = (event) => {
-  var deleteButton = event.target;
-  var parent =
-    deleteButton.parentElement.parentElement.parentElement.parentElement;
-  parent.remove();
+    var deleteButton = event.target;
+    var parent =
+        deleteButton.parentElement.parentElement.parentElement.parentElement;
+    parent.remove();
 };
 
 updatePrice = () => {
-  var formatter = new Intl.NumberFormat();
-  var items = document.getElementById("list-cart");
-  var item = items.getElementsByClassName("card");
-  var total = 0;
-  for (const e of item) {
-    var quantity = e.getElementsByClassName("quantity1")[0].value;
-    var price = e.getElementsByClassName("price")[0].innerHTML;
-    total = quantity * parseInt(price);
-  }
-  $("#total-price").text(`${formatter.format(total)}₫`);
+    var formatter = new Intl.NumberFormat();
+    var items = document.getElementById("list-cart");
+    var item = items.getElementsByClassName("card");
+    var total = 0;
+    for (const e of item) {
+        var quantity = e.getElementsByClassName("quantity1")[0].value;
+        var price = e.getElementsByClassName("price")[0].innerHTML;
+        total = quantity * parseInt(price);
+    }
+    $("#total-price").text(`${formatter.format(total)}₫`);
 };
 
 quantity = () => {
-  var buttonChange = document.getElementsByClassName("btn-change");
-  for (var i = 0; i < buttonChange.length; i++) {
-    buttonChange[i].addEventListener("click", () => {
-      updatePrice();
-    });
-  }
+    var buttonChange = document.getElementsByClassName("btn-change");
+    for (var i = 0; i < buttonChange.length; i++) {
+        buttonChange[i].addEventListener("click", () => {
+            updatePrice();
+        });
+    }
 };
 quantity();
