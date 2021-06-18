@@ -55,3 +55,55 @@
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
 }
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: black;
+  overflow: hidden;
+}
+.panel li {
+  list-style: none;
+}
+.panel li a {
+  text-decoration: none;
+}
+.panel li a:hover {
+  color: #F5C615;
+}
+.panel a {
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+.panel a:hover {
+  transform: translateX(50px);
+}
+.panel .title:hover {
+  transform: translateX(30px);
+}
+.panel .title:hover::before {
+  width: 20px;
+}
+.panel .title::before {
+  content: " ";
+  width: 0px;
+  height: 3px;
+  background-color: #F5C615;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -23px;
+  transition: width 0.3s;
+}
+.panel li {
+  list-style: none;
+  color: #636363;
+  transition: transform 0.2s;
+  position: relative;
+}
+.panel li:hover {
+  cursor: pointer;
+  transform: translateX(10px);
+}

@@ -70,4 +70,77 @@
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
 }
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: black;
+  overflow: hidden;
+}
+
+.panel li {
+  list-style: none;
+}
+
+.panel li a {
+  text-decoration: none;
+}
+
+.panel li a:hover {
+  color: #F5C615;
+}
+
+.panel a {
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+.panel a:hover {
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+}
+
+.panel .title:hover {
+  -webkit-transform: translateX(30px);
+          transform: translateX(30px);
+}
+
+.panel .title:hover::before {
+  width: 20px;
+}
+
+.panel .title::before {
+  content: " ";
+  width: 0px;
+  height: 3px;
+  background-color: #F5C615;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: -23px;
+  -webkit-transition: width .3s;
+  transition: width .3s;
+}
+
+.panel li {
+  list-style: none;
+  color: #636363;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+  position: relative;
+}
+
+.panel li:hover {
+  cursor: pointer;
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+}
 /*# sourceMappingURL=header.css.map */
