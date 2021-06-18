@@ -28,7 +28,7 @@
         <div class="container p-0 ">
             <div class="top-header">
                 <div class="row h-100 m-0">
-                    <div class="col-4 text-start align-self-center ps-4">
+                    <div class="col-4 text-start align-self-center ps-4" style="white-space: nowrap;">
                         <a href="facebook.com/huyhieu.nguyenphaz" class="text-white ms-2"><i class="fab fa-facebook-f"></i></a>
                         <a href="twitter.com/huyhieu.nguyenphaz" class="text-white ms-3"><i class="fab fa-twitter"></i></a>
                         <a href="instagram.com/huyhieu.nguyenphaz" class="text-white ms-3"><i class="fab fa-instagram"></i></a>
@@ -50,9 +50,43 @@
             <div class="midle-header pt-4">
                 <nav class="navbar navbar-expand-lg">
                     <div class="container-fluid">
-                        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                             <i class="fas fa-bars"></i>
                         </button>
+                        <div class="offcanvas offcanvas-start bg-dark" data-bs-scroll="true" tabindex="-1" id="navbarTogglerDemo01" aria-labelledby="Toggle navigation">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title text-white fs-5" id="offcanvasExampleLabel">DAMA</h5>
+                                <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="dropdown mt-3">
+                                <button class="accordion btn text-white fs-4">STORE</button>
+                                <div class="panel list-unstyled">
+                                    <ul class="">
+                                        <li class="title"><a href="">TRANG CHỦ</a></li>
+                                        <li class="mt-1 title"><a href="">VỀ CHÚNG TÔI</a></li>
+                                        <li class="mt-1 title"><a href="">PHẢN HỒI</a></li>
+                                    </ul>
+                                </div>
+        
+                                <button class="accordion btn text-white fs-4">SẢN PHẨM</button>
+                                <div class="panel list-unstyled">
+                                    <ul class="">
+                                        <li class="title"><a href="">DANH SÁCH SẢN PHẨM</a></li>
+                                        <li class="mt-1 title"><a href="">SẢN PHẨM HOT</a></li>
+                                        <li class="mt-1 title"><a href="">SẢN PHẨM MỚI</a></li>
+                                    </ul>
+                                </div>
+        
+                                <button class="accordion btn text-white fs-4">BLOG</button>
+                                <div class="panel list-unstyled">
+                                    <ul class="">
+                                        <li class="title"><a href="">BLOG MỚI</a></li>
+                                        <li class="mt-1 title"><a href="">LESTER</a></li>
+                                        <li class="mt-1 title"><a href="">CONTACT US</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                         <div class="collapse navbar-collapse justify-content-sm-between pb-3" id="navbarTogglerDemo01">
                             <div class="align-self-center ms-3 ">
                                 <a href="/index.html"><img src="/asset/logo/Dana-menu-logo.png" alt=""></a>
@@ -86,7 +120,7 @@
         <div class="bottomheader">
             <div class="container h-100">
                 <div class="row h-100">
-                    <div class="col-lg-10 align-self-center">
+                    <div class="col-lg-10 d-none d-lg-block align-self-center">
                         <ul class="nav-bo d-flex me-auto mb-2 mb-lg-0 list-unstyled">
                             <li class="nav-item">
                                 <a class="nav-link" aria-current="page" href="#"><b>TAI NGHE</b></a>

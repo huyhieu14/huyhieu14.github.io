@@ -457,7 +457,6 @@
 
 .blog {
     .card-body {
-        a {}
         .btn {
             border-radius: 20px;
         }
@@ -508,9 +507,11 @@
     }
 }
 
-.offcanvas{
-    .btn{
-        
+.checkout {
+    .btn-c {
+        width: 100px;
+        background-color: black;
+        border: none;
     }
 }
 
