@@ -59,15 +59,15 @@
 }
 
 .nav-item:hover {
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
 }
 
 .nav-item:hover .nav-active {
   visibility: visible;
   opacity: 1;
   width: 500px;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
 }
 /*# sourceMappingURL=nav-vertical.css.map */
